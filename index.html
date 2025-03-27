@@ -1,14 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video Site</title>
+  <title>Mujianyu's 作品集</title>
 </head>
+
+  <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+		
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 5rem; /* 默认基础尺寸的2.5倍 */
+    line-height: 1.2;  /* 增加行高提升可读性 */
+}
+h2 {
+    text-align: center;
+    color: #111;
+    margin-bottom: 30px;
+    font-size: 2rem; /* 默认基础尺寸的2.5倍 */
+    line-height: 1.2;  /* 增加行高提升可读性 */
+}
+        .video-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .video-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 860px;
+            transition: transform 0.3s ease;
+        }
+
+        .video-item:hover {
+            transform: translateY(-5px);
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .video-title {
+            text-align: center;
+            margin: 10px 0;
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        @media (max-width: 768px) {
+            .video-item {
+                max-width: 100%;
+            }
+        }
+    </style>
+
 <body>
-  <video controls autoplay>
+  	  <h1>作品集展示</h1>
+        <div class="video-gallery">
+            <!-- 第一个视频 -->
+            <div class="video-item">
+              <video controls autoplay>
     <source src="https://media.githubusercontent.com/media/mujianyu/mujianyu.github.io/refs/heads/main/game1.mp4" type="video/mp4">
     Your browser does not support the video tag.
-  </video>
+     </video>      
+          		 
+		  <div class="video-title"><h2>暴风竞技场</h2></div>
+  
+            <!-- 第二个视频 -->
+            <div class="video-item">
+                  <video controls autoplay>
+    <source src="https://media.githubusercontent.com/media/mujianyu/mujianyu.github.io/refs/heads/main/game1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+     </video>   
+                <div class="video-title"><h2>深海逃亡</h2></div>
+            </div>
+
+            <!-- 第三个视频 -->
+            <div class="video-item">
+                  <video controls autoplay>
+    <source src="https://media.githubusercontent.com/media/mujianyu/mujianyu.github.io/refs/heads/main/game1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+     </video>   
+                <div class="video-title"><h2>若昧平生</h2></div>
+            </div>
+              
 </body>
 </html>
